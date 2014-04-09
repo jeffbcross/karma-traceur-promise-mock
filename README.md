@@ -49,11 +49,11 @@ import {use, inject} from 'node_modules/di/src/testing';
 describe('RandomPromise', function() {
   it('should return a result', inject(PromiseMicroTask, function(promiseMicroTask) {
     var goodSpy = jasmine.createSpy();
-    var p = new Promise(function(resolve, reject) {
+    new Promise(function(resolve, reject) {
       resolve('200 OK');
     }).then(goodSpy);
     promiseMicroTask.flush();
-    expect(spy).toHaveBeenCalledWith('200 OK');
+    expect(goodSpy).toHaveBeenCalledWith('200 OK');
   }));
 });
 ```
