@@ -1,0 +1,32 @@
+{
+  "name": "karma-traceur-promise-mock",
+  "version": "0.0.1",
+  "description": "Utility to allow synchronous testing of the Traceur implementation of ES6 Promise",
+  "main": "src/PromiseMicroTasks.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffbcross/karma-traceur-promise-mock"
+  },
+  "dependencies": {
+    "es6-shim": "~0.10.1",
+    "di": "~2.0.0-pre-2"
+  },
+  "devDependencies": {
+    "pipe": "angular/pipe",
+    "traceur": "vojtajina/traceur-compiler#add-es6-pure-transformer-dist"
+  },
+  "keywords": [
+    "traceur",
+    "promise",
+    "es6"
+  ],
+  "author": "jeffbcross",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/jeffbcross/karma-traceur-promise-mock/issues"
+  },
+  "homepage": "https://github.com/jeffbcross/karma-traceur-promise-mock"
+}
