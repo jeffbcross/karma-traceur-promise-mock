@@ -1,5 +1,7 @@
 # Karma Traceur Promise Mock
 
+## Status: Experimental, likely to be abandoned
+
 This project includes a karma plugin, as well as an ES6 class to monkey-patch
 Traceur's implementation of `Promise` in order to make the asynchronous promise
 microtasks flushable and synchronous inside of tests. This is an experiment to
@@ -17,6 +19,9 @@ It accomplishes this by a series of ~~hacks~~ creative techniques:
     microtask queue. Also provides methods for restoring the global Traceur or
     Native version of promise.
 
+## Install
+
+`$ npm install jeffbross/karma-traceur-promise-mock`
 
 ## Add as Karma Plugin
 
